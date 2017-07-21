@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:minWidth="250dip"
+    tools:context="com.test.dialog.MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="提示"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/tile"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="没有找到档案，请先下载档案，然后在点击上班" />
+
+
+
+
+    <TextView
+        android:id="@+id/linview"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text"
+        android:background="#b5b5b5" />
+
+    <TextView
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="下载档案"
+        android:textColor="#45a2ff"
+        android:gravity="center"
+        android:layout_below="@+id/linview"/>
+    <!--<Button-->
+        <!--android:id="@+id/down_bt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/linview"-->
+        <!--android:text="下载档案"-->
+        <!--android:textColor="#45a2ff" />-->
+
+
+</RelativeLayout>
